@@ -1,0 +1,382 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-image: url("background4.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(219, 198, 10);
+    
+    
+
+    
+    
+
+}
+.page{
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    
+    
+   
+    
+    
+    
+    
+}
+
+.page .header{
+    width: 100%;
+    height: 80px;
+    background-color:#023047;
+    
+    box-shadow: 0px 2px 10px  ;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    gap: 5px;
+
+    
+    
+    
+
+
+}
+.page .header a{
+    color: #219EBC;
+    margin: 10px;
+    background-color: transparent;
+    height: 20px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+    font-size: 20px;
+
+
+    transition-duration: 300ms;
+    
+}
+.page .header .logo{
+    position: absolute;
+    color: white;
+    top: 3px;
+    left: 2px;
+    width: 80px;
+    background-color: transparent;
+    font-size: 28px;
+    text-decoration: none;
+    border: none;
+
+}
+.page .container{
+    height:100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 20px;
+
+    
+    
+
+
+}
+.page .footer{
+    width: 100%;
+    height: 120px;
+    background-color: #023047;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px -5px 10px rgba(255,255,255,0.2);
+    border-top: solid 0px white;
+
+    
+   
+    
+    
+
+}
+.page .footer .contact_info{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    justify-content: space-between;
+    gap: 10px;
+
+
+    text-decoration:none;
+
+    
+    
+}
+.page .footer .contact_info .mail{
+
+    margin-left: 10px;
+
+    flex: 1;
+    order:2;
+    width: fit-content;
+
+}
+.page .footer .contact_info .phone{
+
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    width: fit-content;
+
+
+
+    flex:1 ;
+    order:1;
+
+}
+.page .footer .contact_info .social_media{
+
+    flex: 2;
+    order:3;
+    justify-self:flex-end;
+    align-self: center;
+    
+    text-align:center;
+    
+
+}
+
+.fa-facebook , .fa-twitter, .fa-instagram, .fa-linkedin{
+    border: solid 1px white;
+    border-radius: 5px;
+
+    
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    width:15px;
+    margin: 3px;
+
+
+}
+.page .footer .contact_info .social_media{
+
+    flex: 2;
+    order:3;
+    justify-self:flex-end;
+    align-self: center;
+    
+    text-align:center;
+    
+
+}
+.page .header a:hover{
+
+    color:white ;
+    text-decoration: none;
+   
+    background-color: #219EBC;
+    
+
+}
+
+.page .header .logo:hover{
+    background-color: transparent;
+    animation:logo;
+    animation-duration: 1s;
+
+}
+@keyframes logo {
+    
+    40%{
+        letter-spacing: 7px;
+    }
+    60%{
+        letter-spacing: 5px;
+
+    }
+    75%{
+        letter-spacing: 7px;
+    }
+    
+
+}
+
+.page .content{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+
+
+
+}
+.page .content h1{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+    text-transform:capitalize;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: default;    
+    width: fit-content;
+    text-decoration: underline;
+    text-shadow:0px 0px 4px black;
+    transition-duration: 300ms;
+    
+
+}
+.page .content h1:hover{
+    text-shadow:0px 0px 6px whitesmoke;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    
+    
+}
+.page .content h2{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 29px;
+    text-transform: capitalize;
+    text-decoration:underline;
+    color:yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+    width: fit-content;
+    text-shadow:0px 0px 3px black;
+    transition-duration: 300ms;
+
+}
+.page .content h2:hover{
+
+    text-shadow:0px 0px 6px black;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+.page .content p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 19px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.page .footer .contact_info a{
+    color: rgb(250, 250, 250);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.page .content .img{
+    width: 250px;
+    align-self: center;
+    transition-duration: 300ms;
+    border-radius: 10px;
+    margin:5px;
+
+}
+.page .content .img:hover{
+    width: 300px;
+    align-self: center;
+    border-radius: 5px;
+
+}
+.page .content .img:active{
+    position:static;
+    width: 100%;
+}
+@media (max-width:500px){
+    .page .header a{
+        color: #219EBC;
+        margin: 2px;
+        background-color: transparent;
+        height: 20px;
+        width:fit-content;
+        padding: 5px;
+        border-radius: 25px;
+        text-decoration: none;
+        text-transform:capitalize;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        
+        font-size: 16px;
+    
+    
+        transition-duration: 300ms;
+        
+    }
+    .page .header{
+        height: 65px;
+    }
+    .page .header .logo{
+        position: absolute;
+        color: white;
+        top: 11px;
+        left: 2px;
+        width: 80px;
+        background-color: transparent;
+        font-size: 26px;
+        text-decoration: none;
+        border: none;
+    
+    }
+
+}
+
+@media (min-width:650px){
+
+    .page .content .img{
+        width: 500px;
+        align-self: center;
+        transition-duration: 300ms;
+        border-radius: 10px;
+        margin:5px;
+    
+    }
+    .page .content .img:hover{
+        width: 600px;
+        align-self: center;
+        border-radius: 5px;
+    
+    }
+    .page .content .img:active{
+        position:static;
+        width: 100%;
+    }
+
+}
+
